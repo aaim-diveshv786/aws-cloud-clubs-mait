@@ -11,20 +11,38 @@ export default function Navbar() {
           AWSCC MAIT
         </span>
       </div>
+
       <nav className="hidden md:flex items-center gap-8">
-        <a className="relative text-primary font-headline font-bold pb-1 after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:bg-primary" href="#">
+        <a
+          className="relative text-primary font-headline font-bold pb-1 after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:bg-primary"
+          href="#"
+        >
           About
         </a>
-        <a className="relative text-on-surface-variant hover:text-primary font-headline font-bold pb-1 transition-colors after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" href="#">
+
+        <a
+          className="relative text-on-surface-variant hover:text-primary font-headline font-bold pb-1 transition-colors after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+        >
           Events
         </a>
-        <a className="relative text-on-surface-variant hover:text-primary font-headline font-bold pb-1 transition-colors after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" href="#">
+
+        {/* FIXED: go to /team */}
+        <a
+          className="relative text-on-surface-variant hover:text-primary font-headline font-bold pb-1 transition-colors after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+          href="/team"
+        >
           Team
         </a>
-        <a className="relative text-on-surface-variant hover:text-primary font-headline font-bold pb-1 transition-colors after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" href="#">
+
+        <a
+          className="relative text-on-surface-variant hover:text-primary font-headline font-bold pb-1 transition-colors after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+        >
           Community
         </a>
       </nav>
+
       <button className="bg-primary text-on-primary px-8 py-3 rounded-full font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-200 pixel-hard-shadow border-2 border-on-primary-fixed">
         Join Us
       </button>
