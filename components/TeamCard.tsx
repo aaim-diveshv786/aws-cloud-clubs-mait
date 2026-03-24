@@ -7,20 +7,24 @@ type TeamMember = {
   name: string;
   role: string;
   imageSrc?: string;
+  socials?: {
+    linkedin?: string;
+    instagram?: string;
+  };
 };
 
 const members: TeamMember[] = [
-  { name: "John Doe", role: "Designer", imageSrc: "/placeholders/member-1.png" },
-  { name: "Jane Smith", role: "Developer", imageSrc: "/placeholders/member-2.png" },
-  { name: "Alice Johnson", role: "Manager", imageSrc: "/placeholders/member-3.png" },
-  { name: "Bob Brown", role: "Analyst", imageSrc: "/placeholders/member-4.png" },
+  { name: "John Doe", role: "Designer", imageSrc: "/placeholders/member-1.png", socials: { linkedin: "https://linkedin.com/in/johndoe", instagram: "https://instagram.com/johndoe" } },
+  { name: "Jane Smith", role: "Developer", imageSrc: "/placeholders/member-2.png", socials: { linkedin: "https://linkedin.com/in/janesmith", instagram: "https://instagram.com/janesmith" } },
+  { name: "Alice Johnson", role: "Manager", imageSrc: "/placeholders/member-3.png", socials: { linkedin: "https://linkedin.com/in/alicejohnson", instagram: "https://instagram.com/alicejohnson" } },
+  { name: "Bob Brown", role: "Analyst", imageSrc: "/placeholders/member-4.png", socials: { linkedin: "https://linkedin.com/in/bobbrown", instagram: "https://instagram.com/bobbrown" } },
 ];
 
 const CARD_W = 320;
 const CARD_H = 420;
 
 // put your card-back art here:
-const CARD_BACK_SRC = "public/screen.png";
+const CARD_BACK_SRC = "/screen.png";
 
 export default function TeamCardsView() {
   const [activeIndex, setActiveIndex] = useState(0);
